@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+  <script defer src="jeopardy.js"></script>
+  <link rel="stylesheet" href="game.css">
+  <title>Jeopardy</title>
+</head>
+
+<body>
+  <heading>
+    <h3><span id="jeopardy">JEOPARDY!</span></h3>
+    <div id="my-score">My Score: <span id="score-number">0</span></div>
+  </heading>
+
+  <div id="game">
+    <div class="category-box">
+      <div class="category">Category 1 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+    <div class="category-box">
+      <div class="category">Category 2 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+    <div class="category-box">
+      <div class="category">Category 3 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+    <div class="category-box">
+      <div class="category">Category 4 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+    <div class="category-box">
+      <div class="category">Category 5 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+    <div class="category-box">
+      <div class="category">Category 6 Name</div>
+      <div class="clue">$200</div>
+      <div class="clue">$400</div>
+      <div class="clue">$600</div>
+      <div class="clue">$800</div>
+      <div class="clue">$1000</div>
+    </div>
+  </div>
+
+  <form action="index.html">
+    <button class="quit">QUIT</button>
+  </form>
+
+  <!-- Modal code from W3school: https://www.w3schools.com/howto/howto_css_modals.asp-->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="countdown">10</span>
+        <span class="close">&#10005</span>
+      </div>
+      <div class="modal-body">
+        <p id="detailed-clue">Your clue here.</p>
+        <form>
+          <input type="text" placeholder="Answer here" value=""><br>
+          <button class="submit">Submit</button><br>
+          <p id="correct-answer"></p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<footer>
+  <p>D&D by Corey S. Neely</p>
+  <p>  API used from http://jservice.io/</p>
+</footer>
+
+</html>

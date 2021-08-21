@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="code.js"></script>
+  <title>Let's Play!</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="lets-play">Let's Play</h1>
+    <h1 id="jeopardy">JEOPARDY!</h1>
+  </div>
+  <div id="rules">
+    <button id="special-rules">Game Rules</button>
+  </div>
+  <form action="game.html">
+    <button id="create-game">Click To Play!</button>
+  </form>
+
+
+  <!-- Modal code from W3school: https://www.w3schools.com/howto/howto_css_modals.asp-->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>&nbsp</span>
+        <span>Rules</span>
+        <span class="close">&#10005</span>
+      </div>
+      <div class="modal-body">
+        <p>1. After click start game, you can pick a category and a point value.</p>
+        <p>2. Click on the chosen box for the clue.</p>
+        <p>3. You will have 10 seconds to read the clue and submit an answer.</p>
+        <p>4. You will gain the points if your answer is correct; lose if incorrect.</p>
+        <p>5. No points will be deducted if you fail to answer within 10 seconds.</p>
+        <p>6. You don't need to type "What is/Who is" in your answer.</p>
+        <p>7. Enjoy my game!</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+  <p>D&D by Corey S. Neely </p>
+  <p>API used from http://jservice.io/</p>
+</footer>
+
+</html>
+
